@@ -1,0 +1,16 @@
+body {
+
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: sans-sherif;
+}
+
+.label {
+    text-align: right;
+}
+
+.my_dataviz {
+    background-image: linear-gradient(to right, olive, cyan);
+}
