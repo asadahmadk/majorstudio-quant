@@ -15,6 +15,7 @@ const svg = d3.select("#my_dataviz")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 
+
 //Read the data
 d3.csv("https://raw.githubusercontent.com/asadahmadk/MajorStudio1/main/quantativeproject/data.csv").then(function (data) {
     // Add X axis
@@ -42,11 +43,12 @@ d3.csv("https://raw.githubusercontent.com/asadahmadk/MajorStudio1/main/quantativ
         .attr("cx", function (d) { return x(d.Value); })
         .attr("cy", function (d) { return y(d.GeoAreaCode / 10); })
         .attr("r", 0.1)
-        .style("fill", "#69b3a2")
+
 
     var gdots = svg.selectAll("g.dot")
         .data(data)
         .enter().append('g');
+
 
     gdots.append("circle")
         .attr("class", "dot")
@@ -62,6 +64,7 @@ d3.csv("https://raw.githubusercontent.com/asadahmadk/MajorStudio1/main/quantativ
         .style("fill", function (d) {
             return d.c;
         });
+    // Labels
     gdots.append("text").text(function (d) {
         return d.GeoAreaName;
     })
@@ -70,9 +73,9 @@ d3.csv("https://raw.githubusercontent.com/asadahmadk/MajorStudio1/main/quantativ
         })
         .attr("y", function (d) {
             return y(d.GeoAreaCode / 10);
-        }
-        );
-
+        })
+        .attr("fill", "white")
+        .attr("font-size", "14px");
 }
 )
 function makeGrid() {
