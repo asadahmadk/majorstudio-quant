@@ -10,5 +10,7 @@ This typograph is inspired by physical installations where information displays 
 
 ![Quantative Project Final](https://user-images.githubusercontent.com/109235609/209034851-4553d476-3d66-482e-8afb-97788acb9f53.png)
 
-[Data Source] (https://unstats.un.org/sdgs/dataportal/database)
+[Data Source](https://unstats.un.org/sdgs/dataportal/database)
+https://observablehq.com/@asadahmadk/labour-share-of-gdp
+
 
